@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'JKViewAnimation_Example' do
+  pod 'JKViewAnimation', :path => '../'
+
+  target 'JKViewAnimation_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
