@@ -38,9 +38,9 @@
 
 /* Begin PBXFileReference section */
 		0B7BA9AD8124E79DAC4BE793 /* Pods-JKViewAnimation_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKViewAnimation_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKViewAnimation_Example/Pods-JKViewAnimation_Example.release.xcconfig"; sourceTree = "<group>"; };
-		1C4D7C9A2722FD525555886D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1C4D7C9A2722FD525555886D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		279352EF5D009FBC82AE8759 /* Pods_JKViewAnimation_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKViewAnimation_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3941EE9E36DCEC2E4DD14C1D /* JKViewAnimation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JKViewAnimation.podspec; path = ../JKViewAnimation.podspec; sourceTree = "<group>"; };
+		3941EE9E36DCEC2E4DD14C1D /* JKViewAnimation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JKViewAnimation.podspec; path = ../JKViewAnimation.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		52615190BF0ADD9A4554AD38 /* Pods-JKViewAnimation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKViewAnimation_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKViewAnimation_Tests/Pods-JKViewAnimation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* JKViewAnimation_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKViewAnimation_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -65,7 +65,7 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A62640E6C3B5C626BCADD68A /* Pods_JKViewAnimation_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKViewAnimation_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56F9F9775E6A42BCD811CBB /* Pods-JKViewAnimation_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKViewAnimation_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKViewAnimation_Example/Pods-JKViewAnimation_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		BB0537B4B27314B68A267B8F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		BB0537B4B27314B68A267B8F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EE26AAB4D883994BCD10B8A0 /* Pods-JKViewAnimation_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKViewAnimation_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKViewAnimation_Tests/Pods-JKViewAnimation_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

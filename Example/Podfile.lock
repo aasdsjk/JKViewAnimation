@@ -1,0 +1,16 @@
+PODS:
+  - JKViewAnimation (0.1.0)
+
+DEPENDENCIES:
+  - JKViewAnimation (from `../`)
+
+EXTERNAL SOURCES:
+  JKViewAnimation:
+    :path: ../
+
+SPEC CHECKSUMS:
+  JKViewAnimation: ffb8f2ff0f2928efd2db7ea343bb038642f49ff2
+
+PODFILE CHECKSUM: baaa93a104d54b839a149e560890435cc7d47d15
+
+COCOAPODS: 1.4.0

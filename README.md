@@ -7,6 +7,8 @@
 
 ## Example
 
+
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
@@ -22,7 +24,7 @@ pod 'JKViewAnimation'
 
 ## Author
 
-aasdsjk, 1289647068@qq.com
+sjk, 1289647068@qq.com
 
 ## License
 
