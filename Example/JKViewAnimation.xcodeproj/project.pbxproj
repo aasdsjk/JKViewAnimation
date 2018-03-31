@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A4CD157206F957000BE156A /* CustomShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4CD153206F956F00BE156A /* CustomShareView.m */; };
+		3A4CD158206F957000BE156A /* CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4CD154206F957000BE156A /* CustomAlertView.m */; };
 		564D8F01D41A85FD303B28E9 /* Pods_JKViewAnimation_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 279352EF5D009FBC82AE8759 /* Pods_JKViewAnimation_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -41,6 +43,10 @@
 		1C4D7C9A2722FD525555886D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		279352EF5D009FBC82AE8759 /* Pods_JKViewAnimation_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKViewAnimation_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3941EE9E36DCEC2E4DD14C1D /* JKViewAnimation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JKViewAnimation.podspec; path = ../JKViewAnimation.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3A4CD153206F956F00BE156A /* CustomShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomShareView.m; sourceTree = "<group>"; };
+		3A4CD154206F957000BE156A /* CustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAlertView.m; sourceTree = "<group>"; };
+		3A4CD155206F957000BE156A /* CustomShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomShareView.h; sourceTree = "<group>"; };
+		3A4CD156206F957000BE156A /* CustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAlertView.h; sourceTree = "<group>"; };
 		52615190BF0ADD9A4554AD38 /* Pods-JKViewAnimation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKViewAnimation_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKViewAnimation_Tests/Pods-JKViewAnimation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* JKViewAnimation_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKViewAnimation_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -143,6 +149,10 @@
 		6003F593195388D20070C39A /* Example for JKViewAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				3A4CD156206F957000BE156A /* CustomAlertView.h */,
+				3A4CD154206F957000BE156A /* CustomAlertView.m */,
+				3A4CD155206F957000BE156A /* CustomShareView.h */,
+				3A4CD153206F956F00BE156A /* CustomShareView.m */,
 				6003F59C195388D20070C39A /* JKAppDelegate.h */,
 				6003F59D195388D20070C39A /* JKAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -404,7 +414,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* JKAppDelegate.m in Sources */,
+				3A4CD157206F957000BE156A /* CustomShareView.m in Sources */,
 				6003F5A7195388D20070C39A /* JKViewController.m in Sources */,
+				3A4CD158206F957000BE156A /* CustomAlertView.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

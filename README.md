@@ -7,7 +7,8 @@
 
 ## Example
 
-
+CustomAlertView *alert = [[CustomAlertView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+[alert jk_showInWindowWithMode:JKCustomAnimationModeAlert inView:nil bgAlpha:0.2 needEffectView:YES];
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 

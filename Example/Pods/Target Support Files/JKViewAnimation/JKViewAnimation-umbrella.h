@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "UIView+CustomAlertView.h"
 
 FOUNDATION_EXPORT double JKViewAnimationVersionNumber;
 FOUNDATION_EXPORT const unsigned char JKViewAnimationVersionString[];

@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C1DC490E7A8D52EDFAE5EF5E84CC286 /* JKViewAnimation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5DAF8E702EFE0512F1B6E46BC0E0F69 /* JKViewAnimation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0E3745CF4BE278D87305B9BD9A7657F2 /* Pods-JKViewAnimation_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 732692167804A8E087E88F1B50907F3F /* Pods-JKViewAnimation_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F2098513BA013E204AFD3B7FE7F632B /* UIView+CustomAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 51BC1453B665B3B03C51797B76DDAAD1 /* UIView+CustomAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		264730B77D136EF65EE5834AFE8991D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		4AC3F783A0926039C7144E78085AF539 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD9F578E57A089291294BC42FF1BDBA /* ReplaceMe.m */; };
+		2BC3C82AFB38197F5BF1976C7097F104 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		54BCD7C38B769D5248AD68023A078525 /* Pods-JKViewAnimation_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6124214FF1E7174CD8AC1A374C997EA6 /* Pods-JKViewAnimation_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		76C10098B8D39A725D5EE3FE977370A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		7E4D27CA95CC61162B4DF4D6B24AACDA /* Pods-JKViewAnimation_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 83299A985D175590ACF1068E0BBCE842 /* Pods-JKViewAnimation_Example-dummy.m */; };
-		AA3FE10F8919F9E4C61150D2CB2C436C /* JKViewAnimation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 603F1363C10CB378323E295D7A59AFED /* JKViewAnimation-dummy.m */; };
+		9935035C3F87D666294B4E2E5630FCDC /* JKViewAnimation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F0B1F612F22B049BE3D937A7052EC17B /* JKViewAnimation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7DF53C4739331CB079F2A68C4890D93 /* JKViewAnimation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A2E703380383EF76EEA0DB4EC715B1 /* JKViewAnimation-dummy.m */; };
+		C655649B2E4A12F7E8B7DA5FE8E2F6B6 /* UIView+CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC0E5A9905251155B47E0944FFDC60D /* UIView+CustomAlertView.m */; };
 		E40426E9A0B8E93171F67297D298F3C7 /* Pods-JKViewAnimation_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 340991DA2E8B1DF0D76357E267E5DE29 /* Pods-JKViewAnimation_Tests-dummy.m */; };
 		E7BAE6A111A03AA1B966127696AF96CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -24,24 +25,28 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C3997FF0FE90993CA4E429EAE72C5FDE;
+			remoteGlobalIDString = CB4313480FE327B2441198140D7F5966;
 			remoteInfo = JKViewAnimation;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07C528DC5473720652C0450FFE97D161 /* JKViewAnimation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JKViewAnimation.xcconfig; sourceTree = "<group>"; };
 		0C565C238162203D8DF298207DD53F57 /* Pods-JKViewAnimation_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKViewAnimation_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		145A2D6A93B0BAFB353DA626C6AA6D51 /* JKViewAnimation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKViewAnimation-prefix.pch"; sourceTree = "<group>"; };
+		10A2E703380383EF76EEA0DB4EC715B1 /* JKViewAnimation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JKViewAnimation-dummy.m"; sourceTree = "<group>"; };
 		149CF8B53E27E4703A918D03546082E2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19C476983BB67529D49065D3C5DA21EC /* Pods-JKViewAnimation_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKViewAnimation_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		340991DA2E8B1DF0D76357E267E5DE29 /* Pods-JKViewAnimation_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JKViewAnimation_Tests-dummy.m"; sourceTree = "<group>"; };
 		36AB47746F986E9035D2D040D9EA277B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DC2B8DD02286F298118422F59592A83 /* Pods-JKViewAnimation_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKViewAnimation_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		4EAC76A5B67070DE5253ACA4BA1FFC20 /* JKViewAnimation.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = JKViewAnimation.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		47BA0FAC29A6FA38DC1B1BD9BEC7F33E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		51BC1453B665B3B03C51797B76DDAAD1 /* UIView+CustomAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+CustomAlertView.h"; path = "JKViewAnimation/Classes/UIView+CustomAlertView.h"; sourceTree = "<group>"; };
 		53E7A4FFB19E1A4A7006A7E90219C331 /* Pods_JKViewAnimation_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JKViewAnimation_Tests.framework; path = "Pods-JKViewAnimation_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5436D1B89958FF36F8585A0497089851 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54446C48CA13D8E55A2A4A2073ACFF8D /* JKViewAnimation.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = JKViewAnimation.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		56F81483DB82FF3B33DECFFB50BF8CC5 /* Pods-JKViewAnimation_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKViewAnimation_Example.release.xcconfig"; sourceTree = "<group>"; };
-		603F1363C10CB378323E295D7A59AFED /* JKViewAnimation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JKViewAnimation-dummy.m"; sourceTree = "<group>"; };
-		604FA06BE8E457BCDEDD28EC0931B1DE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		5A2461B970539C09430CEFFEE52970E9 /* JKViewAnimation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKViewAnimation-prefix.pch"; sourceTree = "<group>"; };
+		5DC0E5A9905251155B47E0944FFDC60D /* UIView+CustomAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+CustomAlertView.m"; path = "JKViewAnimation/Classes/UIView+CustomAlertView.m"; sourceTree = "<group>"; };
 		6124214FF1E7174CD8AC1A374C997EA6 /* Pods-JKViewAnimation_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JKViewAnimation_Tests-umbrella.h"; sourceTree = "<group>"; };
 		62BC2F70A955BDFEE757A17395AB0F0B /* Pods-JKViewAnimation_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKViewAnimation_Example-frameworks.sh"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -49,19 +54,16 @@
 		7C4372C7F30BC54E0814EA4CB382BC4A /* Pods-JKViewAnimation_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKViewAnimation_Tests-resources.sh"; sourceTree = "<group>"; };
 		83299A985D175590ACF1068E0BBCE842 /* Pods-JKViewAnimation_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JKViewAnimation_Example-dummy.m"; sourceTree = "<group>"; };
 		85B95151A03CF2D9C2E786B0C889C819 /* Pods_JKViewAnimation_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JKViewAnimation_Example.framework; path = "Pods-JKViewAnimation_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		87AD4994DF8B5FE3603EBB88EE3562FE /* JKViewAnimation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JKViewAnimation.xcconfig; sourceTree = "<group>"; };
-		91A0DEB516F3923457E820D4260EC301 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		8F04A2D447500E72ACC292640F995B7A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		96E56C82F866333BB9A1F62D2875837F /* Pods-JKViewAnimation_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKViewAnimation_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9D65D00046DFF39C6290BD9143FF0DFB /* Pods-JKViewAnimation_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JKViewAnimation_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A591AE96376962A90D25EB55AEEBDD53 /* JKViewAnimation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JKViewAnimation.modulemap; sourceTree = "<group>"; };
-		AFD9F578E57A089291294BC42FF1BDBA /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = JKViewAnimation/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		B63BCF225F3DA4A3D1148227FB8819FB /* Pods-JKViewAnimation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKViewAnimation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C7BF90606980BED7D87184F12C6AB08B /* Pods-JKViewAnimation_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JKViewAnimation_Example.modulemap"; sourceTree = "<group>"; };
 		CAC2E5021D75A20D623C87CDAC05D0BC /* Pods-JKViewAnimation_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKViewAnimation_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		E5DAF8E702EFE0512F1B6E46BC0E0F69 /* JKViewAnimation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKViewAnimation-umbrella.h"; sourceTree = "<group>"; };
+		E6A8F72D4AA11609648BEE46524D986B /* JKViewAnimation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JKViewAnimation.modulemap; sourceTree = "<group>"; };
 		EBC7CAE7D67E6E705F1D72CE295B2E28 /* Pods-JKViewAnimation_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKViewAnimation_Example-resources.sh"; sourceTree = "<group>"; };
-		ECD59A44C1247C72DDBE4B74C4AB8A9B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0B1F612F22B049BE3D937A7052EC17B /* JKViewAnimation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKViewAnimation-umbrella.h"; sourceTree = "<group>"; };
 		F1DC36832A9B042490F07849A636643C /* Pods-JKViewAnimation_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JKViewAnimation_Tests.modulemap"; sourceTree = "<group>"; };
 		F36E24452F4B2195033AF9CEDF9D4F11 /* JKViewAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JKViewAnimation.framework; path = JKViewAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC88C2F02777C3C420A2B81AE78A4242 /* Pods-JKViewAnimation_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JKViewAnimation_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -76,14 +78,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		26A95F44181EFB0F16F431BBFE4DE3CB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				76C10098B8D39A725D5EE3FE977370A8 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3AE8E1B7B3D7F37C5E627E17C9F7334F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -92,9 +86,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		815B42486F5A47718B632BA35C0A60DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BC3C82AFB38197F5BF1976C7097F104 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		062B4DB0C7E54A54FA3905C455BEA91D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0CCFBD2A3212FA8551850FC5549E4B9 /* JKViewAnimation */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		07C9248B0E517F89EA5D158D75F339BD /* Pods-JKViewAnimation_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,20 +151,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4C64453DABB0DCA1175AF3D90226FE59 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				ECD59A44C1247C72DDBE4B74C4AB8A9B /* Info.plist */,
-				A591AE96376962A90D25EB55AEEBDD53 /* JKViewAnimation.modulemap */,
-				87AD4994DF8B5FE3603EBB88EE3562FE /* JKViewAnimation.xcconfig */,
-				603F1363C10CB378323E295D7A59AFED /* JKViewAnimation-dummy.m */,
-				145A2D6A93B0BAFB353DA626C6AA6D51 /* JKViewAnimation-prefix.pch */,
-				E5DAF8E702EFE0512F1B6E46BC0E0F69 /* JKViewAnimation-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/JKViewAnimation";
-			sourceTree = "<group>";
-		};
 		50FB67093D6A9BFAD5407482A414B9E2 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,44 +160,29 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		71BC7241732B0914BA43CE3BE6BE08E3 /* Pod */ = {
+		6E7CA9983BAD0D2E68360FED29E5EF89 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4EAC76A5B67070DE5253ACA4BA1FFC20 /* JKViewAnimation.podspec */,
-				91A0DEB516F3923457E820D4260EC301 /* LICENSE */,
-				604FA06BE8E457BCDEDD28EC0931B1DE /* README.md */,
+				5436D1B89958FF36F8585A0497089851 /* Info.plist */,
+				E6A8F72D4AA11609648BEE46524D986B /* JKViewAnimation.modulemap */,
+				07C528DC5473720652C0450FFE97D161 /* JKViewAnimation.xcconfig */,
+				10A2E703380383EF76EEA0DB4EC715B1 /* JKViewAnimation-dummy.m */,
+				5A2461B970539C09430CEFFEE52970E9 /* JKViewAnimation-prefix.pch */,
+				F0B1F612F22B049BE3D937A7052EC17B /* JKViewAnimation-umbrella.h */,
 			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		7655AA74998BCD019BF029809D048537 /* JKViewAnimation */ = {
-			isa = PBXGroup;
-			children = (
-				AFD9F578E57A089291294BC42FF1BDBA /* ReplaceMe.m */,
-				71BC7241732B0914BA43CE3BE6BE08E3 /* Pod */,
-				4C64453DABB0DCA1175AF3D90226FE59 /* Support Files */,
-			);
-			name = JKViewAnimation;
-			path = ../..;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JKViewAnimation";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				B1500C9E452184369A0651AFEECBA91C /* Development Pods */,
+				062B4DB0C7E54A54FA3905C455BEA91D /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				423E939A273F4421F4B26219B3E63948 /* Products */,
 				50FB67093D6A9BFAD5407482A414B9E2 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		B1500C9E452184369A0651AFEECBA91C /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7655AA74998BCD019BF029809D048537 /* JKViewAnimation */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -212,12 +193,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CFC8BFFD6B4E74AE9D27D9C44D10F2DA /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				54446C48CA13D8E55A2A4A2073ACFF8D /* JKViewAnimation.podspec */,
+				8F04A2D447500E72ACC292640F995B7A /* LICENSE */,
+				47BA0FAC29A6FA38DC1B1BD9BEC7F33E /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		F0CCFBD2A3212FA8551850FC5549E4B9 /* JKViewAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				51BC1453B665B3B03C51797B76DDAAD1 /* UIView+CustomAlertView.h */,
+				5DC0E5A9905251155B47E0944FFDC60D /* UIView+CustomAlertView.m */,
+				CFC8BFFD6B4E74AE9D27D9C44D10F2DA /* Pod */,
+				6E7CA9983BAD0D2E68360FED29E5EF89 /* Support Files */,
+			);
+			name = JKViewAnimation;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,11 +234,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7EB3297625FAEA2DCECDF7ED2F34E266 /* Headers */ = {
+		55D94C4101F15235AB010406F656A6C4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C1DC490E7A8D52EDFAE5EF5E84CC286 /* JKViewAnimation-umbrella.h in Headers */,
+				9935035C3F87D666294B4E2E5630FCDC /* JKViewAnimation-umbrella.h in Headers */,
+				1F2098513BA013E204AFD3B7FE7F632B /* UIView+CustomAlertView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,13 +272,13 @@
 			productReference = 85B95151A03CF2D9C2E786B0C889C819 /* Pods_JKViewAnimation_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C3997FF0FE90993CA4E429EAE72C5FDE /* JKViewAnimation */ = {
+		CB4313480FE327B2441198140D7F5966 /* JKViewAnimation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6D3253C1EEC7E85F2911991F2D9FBC1F /* Build configuration list for PBXNativeTarget "JKViewAnimation" */;
+			buildConfigurationList = 123B262DCF2888D7493420DD9B2C7977 /* Build configuration list for PBXNativeTarget "JKViewAnimation" */;
 			buildPhases = (
-				F238D71A3F82EA1A6CFEE7DA157FA9B6 /* Sources */,
-				26A95F44181EFB0F16F431BBFE4DE3CB /* Frameworks */,
-				7EB3297625FAEA2DCECDF7ED2F34E266 /* Headers */,
+				D078B1110806387D807914C944588206 /* Sources */,
+				815B42486F5A47718B632BA35C0A60DE /* Frameworks */,
+				55D94C4101F15235AB010406F656A6C4 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -323,7 +327,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C3997FF0FE90993CA4E429EAE72C5FDE /* JKViewAnimation */,
+				CB4313480FE327B2441198140D7F5966 /* JKViewAnimation */,
 				2CA589201AA72F0EAD0CB0E5B7B8EEB9 /* Pods-JKViewAnimation_Example */,
 				ED5F4AEE99B8C42518F2D68B158062A0 /* Pods-JKViewAnimation_Tests */,
 			);
@@ -339,12 +343,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F238D71A3F82EA1A6CFEE7DA157FA9B6 /* Sources */ = {
+		D078B1110806387D807914C944588206 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA3FE10F8919F9E4C61150D2CB2C436C /* JKViewAnimation-dummy.m in Sources */,
-				4AC3F783A0926039C7144E78085AF539 /* ReplaceMe.m in Sources */,
+				A7DF53C4739331CB079F2A68C4890D93 /* JKViewAnimation-dummy.m in Sources */,
+				C655649B2E4A12F7E8B7DA5FE8E2F6B6 /* UIView+CustomAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,15 +366,15 @@
 		C4C9508F9D00506AC194198D6BD729A3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JKViewAnimation;
-			target = C3997FF0FE90993CA4E429EAE72C5FDE /* JKViewAnimation */;
+			target = CB4313480FE327B2441198140D7F5966 /* JKViewAnimation */;
 			targetProxy = CEA22A1ED27FEA91076731F04B034548 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		35CD9570D4B63F236F252F93C1A8DFDB /* Debug */ = {
+		2D266ADBAA92E0793A7420C62EC8D363 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87AD4994DF8B5FE3603EBB88EE3562FE /* JKViewAnimation.xcconfig */;
+			baseConfigurationReference = 07C528DC5473720652C0450FFE97D161 /* JKViewAnimation.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -392,10 +396,11 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		4AE7CD5D2079911592E2AE138701B988 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -648,9 +653,9 @@
 			};
 			name = Debug;
 		};
-		A6D419C485FB5D6218CB9214BAF76F67 /* Release */ = {
+		DB293644D8B9637477D1786580996137 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87AD4994DF8B5FE3603EBB88EE3562FE /* JKViewAnimation.xcconfig */;
+			baseConfigurationReference = 07C528DC5473720652C0450FFE97D161 /* JKViewAnimation.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -672,29 +677,28 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		123B262DCF2888D7493420DD9B2C7977 /* Build configuration list for PBXNativeTarget "JKViewAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB293644D8B9637477D1786580996137 /* Debug */,
+				2D266ADBAA92E0793A7420C62EC8D363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5011B865762FC0C0A28ECEC4CB63DC68 /* Debug */,
 				827269710C98D60C14D46BC6AF9BF728 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6D3253C1EEC7E85F2911991F2D9FBC1F /* Build configuration list for PBXNativeTarget "JKViewAnimation" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				35CD9570D4B63F236F252F93C1A8DFDB /* Debug */,
-				A6D419C485FB5D6218CB9214BAF76F67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
