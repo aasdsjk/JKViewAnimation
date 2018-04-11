@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JKViewAnimation'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = '自定义视图弹出动画'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'JKViewAnimation/Classes/**/*'
+  s.source_files = 'JKViewAnimation/Classes/*'
   
   # s.resource_bundles = {
   #   'JKViewAnimation' => ['JKViewAnimation/Assets/*.png']
