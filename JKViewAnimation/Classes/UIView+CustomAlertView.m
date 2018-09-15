@@ -7,7 +7,7 @@
 //
 
 #import "UIView+CustomAlertView.h"
-//#import <objc/runtime.h>
+#import <objc/runtime.h>
 
 #define ALPHA  0.2 //背景
 #define AlertTime 0.3 //弹出动画时间
@@ -31,6 +31,14 @@ static CGFloat animationTime;
  return [objc_getAssociatedObject(self, @"bgAlpha") floatValue];
  }
  */
+
+-(void)setIsTapBgViewHideView:(BOOL)isTapBgViewHideView{
+    objc_setAssociatedObject(self, @selector(isTapBgViewHideView), @(isTapBgViewHideView), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+-(BOOL)isTapBgViewHideView{
+    return [objc_getAssociatedObject(self, _cmd) boolValue];
+}
+
 
 -(void)jk_showInWindowWithMode:(JKCustomAnimationMode)animationMode inView:(UIView *)superV bgAlpha:(CGFloat)alpha needEffectView:(BOOL)isNeed{
     mode = animationMode;
@@ -61,6 +69,7 @@ static CGFloat animationTime;
 
 
 -(void)tapBgView{
+    
     switch (mode) {
         case JKCustomAnimationModeAlert:
             [self hide];
@@ -78,6 +87,12 @@ static CGFloat animationTime;
             
             break;
     }
+}
+-(void)tapBgViewGuesture {
+    if (!self.isTapBgViewHideView) {
+        return;
+    }
+    [self tapBgView];
 }
 
 -(void)jk_hideView{
@@ -278,7 +293,7 @@ static CGFloat animationTime;
 //添加背景view手势
 -(void)addGuesture:(UIView *)vi{
     vi.userInteractionEnabled = YES;
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapBgView)];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapBgViewGuesture)];
     [vi addGestureRecognizer:tap];
 }
 
