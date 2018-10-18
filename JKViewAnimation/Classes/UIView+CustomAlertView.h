@@ -18,9 +18,17 @@ typedef NS_ENUM(NSInteger, JKCustomAnimationMode) {
 @interface UIView (CustomAlertView)
 
 /**
- 点击背景是否隐藏
+ 背景的透明度
  */
-@property (nonatomic,assign) BOOL isTapBgViewHideView;
+@property (nonatomic,assign) CGFloat bgAlpha;
+/**
+ 动画时间
+ */
+@property (nonatomic,assign) CGFloat animationTime;
+/**
+ 点击背景是否隐藏 默认是false 隐藏
+ */
+@property (nonatomic,assign) BOOL isTapBgViewUnUse;
 /**
  显示 弹出view 任意view导入头文件之后即可调用
  @param animationMode CustomAnimationMode 三种模式

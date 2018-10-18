@@ -14,15 +14,22 @@
 #define DropTime 0.5 //落下动画时间
 #define ShareTime 0.3//分享时间
 
+@interface UIView ()
+@property (nonatomic,assign) JKCustomAnimationMode mode;
+
+@property (nonatomic,assign) BOOL isNeedEffective;
+@property (nonatomic,strong) UIView *supView;
+
+@end
 
 @implementation UIView (CustomAlertView)
 
-static JKCustomAnimationMode mode;
-static CGFloat  bgAlpha;
-static BOOL isNeedEffective;
-
-static UIView *supView;
-static CGFloat animationTime;
+//static JKCustomAnimationMode mode;
+//static CGFloat  bgAlpha;
+//static BOOL isNeedEffective;
+//
+//static UIView *supView;
+//static CGFloat animationTime;
 /*
  - (void)setBgAlpha:(CGFloat)bgAlpha{
  objc_setAssociatedObject(self, BGALPHA, @(bgAlpha), OBJC_ASSOCIATION_ASSIGN);
@@ -31,21 +38,52 @@ static CGFloat animationTime;
  return [objc_getAssociatedObject(self, @"bgAlpha") floatValue];
  }
  */
-
--(void)setIsTapBgViewHideView:(BOOL)isTapBgViewHideView{
-    objc_setAssociatedObject(self, @selector(isTapBgViewHideView), @(isTapBgViewHideView), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+-(void)setMode:(JKCustomAnimationMode)mode{
+    objc_setAssociatedObject(self, @selector(mode), @(mode), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
--(BOOL)isTapBgViewHideView{
+-(JKCustomAnimationMode)mode {
+    return [objc_getAssociatedObject(self, _cmd) integerValue];
+}
+
+-(void)setSupView:(UIView *)supView{
+    objc_setAssociatedObject(self, @selector(supView), supView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+-(UIView*)supView {
+    return objc_getAssociatedObject(self, _cmd);
+}
+
+-(void)setIsTapBgViewUnUse:(BOOL)isTapBgViewUnUse{
+    objc_setAssociatedObject(self, @selector(isTapBgViewUnUse), @(isTapBgViewUnUse), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+-(BOOL)isTapBgViewUnUse{
+    return [objc_getAssociatedObject(self, _cmd) boolValue];
+}
+-(void)setIsNeedEffective:(BOOL)isNeedEffective{
+    objc_setAssociatedObject(self, @selector(isNeedEffective), @(isNeedEffective), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+-(BOOL)isNeedEffective{
     return [objc_getAssociatedObject(self, _cmd) boolValue];
 }
 
+-(void)setBgAlpha:(CGFloat)bgAlpha{
+    objc_setAssociatedObject(self, @selector(bgAlpha), @(bgAlpha), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+-(CGFloat)bgAlpha {
+    return [objc_getAssociatedObject(self, _cmd) floatValue];
+}
+-(void)setAnimationTime:(CGFloat)animationTime{
+    objc_setAssociatedObject(self, @selector(animationTime), @(animationTime), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+-(CGFloat)animationTime{
+    return [objc_getAssociatedObject(self, _cmd) floatValue];
+}
 
 -(void)jk_showInWindowWithMode:(JKCustomAnimationMode)animationMode inView:(UIView *)superV bgAlpha:(CGFloat)alpha needEffectView:(BOOL)isNeed{
-    mode = animationMode;
-    bgAlpha = alpha;
-    isNeedEffective = isNeed;
-    supView = superV;
-    animationTime = [self getAnimationTimeWithMode:animationMode];
+    self.mode = animationMode;
+    self.bgAlpha = alpha;
+    self.isNeedEffective = isNeed;
+    self.supView = superV;
+    self.animationTime = [self getAnimationTimeWithMode:animationMode];
     [self keyBoardListen];
     switch (animationMode) {
         case JKCustomAnimationModeAlert:
@@ -70,9 +108,9 @@ static CGFloat animationTime;
 
 -(void)tapBgView{
     
-    switch (mode) {
+    switch (self.mode) {
         case JKCustomAnimationModeAlert:
-            [self hide];
+            [self alertHide];
             break;
         case JKCustomAnimationModeDrop:
             [self dropDown];
@@ -89,7 +127,7 @@ static CGFloat animationTime;
     }
 }
 -(void)tapBgViewGuesture {
-    if (!self.isTapBgViewHideView) {
+    if (self.isTapBgViewUnUse) {
         return;
     }
     [self tapBgView];
@@ -108,16 +146,16 @@ static CGFloat animationTime;
         [self removeFromSuperview];
     }
     [self addViewInWindow];
-    if (supView) {
-        [supView addSubview:self];
-        self.center = supView.center;
+    if (self.supView) {
+        [self.supView addSubview:self];
+        self.center = self.supView.center;
     }else{
         [[UIApplication sharedApplication].keyWindow addSubview:self];
         self.center = [UIApplication sharedApplication].keyWindow.center;
     }
     self.alpha = 0;
     self.transform = CGAffineTransformScale(self.transform,0.1,0.1);
-    [UIView animateWithDuration:animationTime animations:^{
+    [UIView animateWithDuration:self.animationTime animations:^{
         self.transform = CGAffineTransformIdentity;
         self.alpha = 1;
     }];
@@ -134,7 +172,7 @@ static CGFloat animationTime;
     CGFloat width = self.frame.size.width;
     CGFloat height = self.frame.size.height;
     self.frame = CGRectMake(x, y, width, height);
-    [UIView animateWithDuration:animationTime delay:0 usingSpringWithDamping:0.7 initialSpringVelocity:5 options:UIViewAnimationOptionCurveEaseIn animations:^{
+    [UIView animateWithDuration:self.animationTime delay:0 usingSpringWithDamping:0.7 initialSpringVelocity:5 options:UIViewAnimationOptionCurveEaseIn animations:^{
         self.center = [UIApplication sharedApplication].keyWindow.center;
     } completion:^(BOOL finished) {
         
@@ -152,7 +190,7 @@ static CGFloat animationTime;
     [[UIApplication sharedApplication].keyWindow addSubview:self];
     self.frame = CGRectMake(0, [UIApplication sharedApplication].keyWindow.bounds.size.height, self.frame.size.width, self.frame.size.height);
     // usingSpringWithDamping数值越小，弹簧震动效果越好
-    [UIView animateWithDuration:animationTime delay:0 usingSpringWithDamping:1 initialSpringVelocity:3 options:UIViewAnimationOptionCurveLinear animations:^{
+    [UIView animateWithDuration:self.animationTime delay:0 usingSpringWithDamping:1 initialSpringVelocity:3 options:UIViewAnimationOptionCurveLinear animations:^{
         CGRect  oldFrame = self.frame;
         oldFrame.origin.y = self.frame.origin.y-self.frame.size.height;
         self.frame = oldFrame;
@@ -165,8 +203,8 @@ static CGFloat animationTime;
         [self removeFromSuperview];
     }
     [self addViewInWindow];
-    if (supView) {
-        [supView addSubview:self];
+    if (self.supView) {
+        [self.supView addSubview:self];
         
     }else{
         [[UIApplication sharedApplication].keyWindow addSubview:self];
@@ -190,9 +228,9 @@ static CGFloat animationTime;
 #pragma mark - 动画隐藏
 
 //弹出隐藏
--(void)hide{
+-(void)alertHide{
     if (self.superview) {
-        [UIView animateWithDuration:animationTime animations:^{
+        [UIView animateWithDuration:self.animationTime animations:^{
             self.transform = CGAffineTransformScale(self.transform,0.1,0.1);
             self.alpha = 0;
         } completion:^(BOOL finished) {
@@ -203,7 +241,7 @@ static CGFloat animationTime;
 //下滑隐藏
 -(void)dropDown{
     if (self.superview) {
-        [UIView animateWithDuration:animationTime delay:0 usingSpringWithDamping:1 initialSpringVelocity:5 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        [UIView animateWithDuration:self.animationTime delay:0 usingSpringWithDamping:1 initialSpringVelocity:5 options:UIViewAnimationOptionCurveEaseOut animations:^{
             self.frame = CGRectMake(self.frame.origin.x, [UIApplication sharedApplication].keyWindow.bounds.size.height, self.frame.size.width, self.frame.size.height);
         } completion:^(BOOL finished) {
             [self hideAnimationFinish];
@@ -217,7 +255,7 @@ static CGFloat animationTime;
  */
 -(void)hideShareView{
     if (self.superview) {
-        [UIView animateWithDuration:animationTime delay:0 usingSpringWithDamping:1 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        [UIView animateWithDuration:self.animationTime delay:0 usingSpringWithDamping:1 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
             self.frame = CGRectMake(0, [UIApplication sharedApplication].keyWindow.bounds.size.height, self.frame.size.width, self.frame.size.height);
         } completion:^(BOOL finished) {
             [self hideAnimationFinish];
@@ -265,8 +303,8 @@ static CGFloat animationTime;
  */
 -(void)addViewInWindow{
     UIView *oldView;
-    if (supView) {
-        oldView = [supView viewWithTag:TagValue];
+    if (self.supView) {
+        oldView = [self.supView viewWithTag:TagValue];
     }else{
         oldView = [[UIApplication sharedApplication].keyWindow viewWithTag:TagValue];
     }
@@ -276,15 +314,15 @@ static CGFloat animationTime;
     UIView *v = [[UIView alloc] initWithFrame:[UIApplication sharedApplication].keyWindow.bounds];
     v.tag = TagValue;
     [self addGuesture:v];
-    v.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:bgAlpha == -1 ? ALPHA : bgAlpha];
-    if (isNeedEffective) {
+    v.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:self.bgAlpha == -1 ? ALPHA : self.bgAlpha];
+    if (self.isNeedEffective) {
         UIVisualEffectView *effectView =[[UIVisualEffectView alloc]initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleDark]];
         effectView.frame = v.frame;
         effectView.alpha = 0.6;
         [v addSubview:effectView];
     }
-    if (supView) {
-        [supView addSubview:v];
+    if (self.supView) {
+        [self.supView addSubview:v];
     }else{
         [[UIApplication sharedApplication].keyWindow addSubview:v];
     }
@@ -358,7 +396,7 @@ static CGFloat animationTime;
     NSDictionary *userInfo = [noti userInfo];
     NSValue *value = [userInfo objectForKey:UIKeyboardFrameEndUserInfoKey];
     CGFloat keyBoardEndY = value.CGRectValue.origin.y;  // 得到键盘弹出后的键盘视图所在y坐标;
-    CGFloat space = mode == JKCustomAnimationModeNone ? 0: 10.0;
+    CGFloat space = self.mode == JKCustomAnimationModeNone ? 0: 10.0;
     if (CGRectGetMaxY(self.frame)>=keyBoardEndY) {
         [UIView animateWithDuration:0.5 animations:^{
             CGRect _frame = self.frame;
@@ -373,7 +411,7 @@ static CGFloat animationTime;
     
     
     [UIView animateWithDuration:0.5 animations:^{
-        if (mode==JKCustomAnimationModeShare||mode==JKCustomAnimationModeNone) {
+        if (self.mode==JKCustomAnimationModeShare||self.mode==JKCustomAnimationModeNone) {
             self.frame = CGRectMake(0, [UIApplication sharedApplication].keyWindow.bounds.size.height-self.frame.size.height, self.frame.size.width, self.frame.size.height);
         }else{
             self.center = [UIApplication sharedApplication].keyWindow.center;
