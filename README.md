@@ -27,6 +27,7 @@ it, simply add the following line to your Podfile:
 pod 'JKViewAnimation','~>1.0.3'
 ```
 pod 1.0.2 （修改方法名，避免与系统的方法冲突）
+
 pod 1.0.3  (增加多个属性控制背景点击，透明度等等)
 ## Author
 
