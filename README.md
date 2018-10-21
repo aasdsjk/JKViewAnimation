@@ -8,10 +8,10 @@
 ## Example
 #import <JKViewAnimation/UIView+CustomAlertView.h>
 
-///创建自定义视图
 CustomAlertView *alert = [[CustomAlertView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+    
+alert.isTapBgViewUnUse = NO;///默认
 
-///调用分类方法  animationMode CustomAnimationMode 三种模式
 [alert jk_showInWindowWithMode:JKCustomAnimationModeAlert inView:nil bgAlpha:0.2 needEffectView:YES];
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -24,9 +24,11 @@ JKViewAnimation is available through [CocoaPods](http://cocoapods.org). To insta
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'JKViewAnimation','~>1.0.2'
+pod 'JKViewAnimation','~>1.0.3'
 ```
+pod 1.0.2 （修改方法名，避免与系统的方法冲突）
 
+pod 1.0.3  (增加多个属性控制背景点击，透明度等等)
 ## Author
 
 sjk, 1289647068@qq.com
