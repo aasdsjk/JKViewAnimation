@@ -218,7 +218,6 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				9388CFB9F8E6684244A3C86A /* [CP] Embed Pods Frameworks */,
-				0330FBF27CABCFB447119B7A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,8 +236,6 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				7EE12FDC81330BB6549E5EB3 /* [CP] Embed Pods Frameworks */,
-				38F8B635A21356B46AE491E3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -307,58 +304,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0330FBF27CABCFB447119B7A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JKViewAnimation_Example/Pods-JKViewAnimation_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		38F8B635A21356B46AE491E3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JKViewAnimation_Tests/Pods-JKViewAnimation_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7EE12FDC81330BB6549E5EB3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JKViewAnimation_Tests/Pods-JKViewAnimation_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9388CFB9F8E6684244A3C86A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-JKViewAnimation_Example/Pods-JKViewAnimation_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-JKViewAnimation_Example/Pods-JKViewAnimation_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/JKViewAnimation/JKViewAnimation.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -367,7 +319,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JKViewAnimation_Example/Pods-JKViewAnimation_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JKViewAnimation_Example/Pods-JKViewAnimation_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B4712143B0DD59AE4EDAB776 /* [CP] Check Pods Manifest.lock */ = {

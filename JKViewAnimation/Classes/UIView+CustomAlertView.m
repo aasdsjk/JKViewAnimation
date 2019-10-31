@@ -155,10 +155,16 @@
     }
     self.alpha = 0;
     self.transform = CGAffineTransformScale(self.transform,0.1,0.1);
-    [UIView animateWithDuration:self.animationTime animations:^{
+    [UIView animateWithDuration:self.animationTime delay:0 usingSpringWithDamping:0.7 initialSpringVelocity:5 options:UIViewAnimationOptionCurveEaseIn animations:^{
         self.transform = CGAffineTransformIdentity;
         self.alpha = 1;
+    } completion:^(BOOL finished) {
+        
     }];
+//    [UIView animateWithDuration:self.animationTime animations:^{
+//        self.transform = CGAffineTransformIdentity;
+//        self.alpha = 1;
+//    }];
 }
 //下滑出动画
 -(void)upToDownShowInWindow{
